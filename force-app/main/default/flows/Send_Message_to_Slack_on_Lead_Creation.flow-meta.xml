@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Message_to_Slack</name>
+        <label>Send Message to Slack</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>SendMessageToSlackChannel</actionName>
+        <actionType>slackFlow</actionType>
+        <connector>
+            <targetReference>Send_Private_Message</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>channelId</name>
+            <value>
+                <stringValue>C03STRPGFRC</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>test</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendMessageToSlackChannel</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Private_Message</name>
+        <label>Send Private Message</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>SendMessageToSlackChannel</actionName>
+        <actionType>slackFlow</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>channelId</name>
+            <value>
+                <stringValue>D03T0DZH4CS</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>message</name>
+            <value>
+                <elementReference>test</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendMessageToSlackChannel</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>HostName</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_580}, FIND( &apos;/services&apos;, {!$Api.Partner_Server_URL_580}))</expression>
+    </formulas>
+    <formulas>
+        <name>LEAD</name>
+        <dataType>String</dataType>
+        <expression>&quot;&lt;https://&quot; &amp; {!HostName} &amp; &quot;/&quot; &amp; {!$Record.Id} &amp; &quot;|Lead: &quot; &amp; {!$Record.FirstName} &amp; &quot; &quot; &amp; {!$Record.LastName} &amp; &quot;&gt;&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>LEADLink</name>
+        <dataType>String</dataType>
+        <expression>&apos;&lt;https://orgfarm-2bd9c26cae-dev-ed.develop.my.salesforce.com/&apos; &amp; {!$Record.Id} &amp; &apos;|&apos; &amp; &apos;New Lead: &apos; &amp; {!$Record.FirstName} &amp; &apos; &apos; &amp; {!$Record.LastName} &amp; &apos;&gt;&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>LeadURL</name>
+        <dataType>String</dataType>
+        <expression>&apos;&lt;https://orgfarm-2bd9c26cae-dev-ed.develop.my.salesforce.com&apos; &amp; {!$Record.Id} &amp;  &apos;|&apos; &amp; {!$Record.FirstName} &amp; &apos; &apos; &amp; {!$Record.LastName} &amp; &apos;&gt;&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>test</name>
+        <dataType>String</dataType>
+        <expression>&quot;&lt;https://&quot; &amp; 
+MID($Api.Partner_Server_URL_580, FIND(&apos;://&apos;, $Api.Partner_Server_URL_580) + 3, FIND(&apos;/services&apos;, $Api.Partner_Server_URL_580) - FIND(&apos;://&apos;, $Api.Partner_Server_URL_580) - 3) 
+&amp; &quot;/&quot; &amp; CASESAFEID({!$Record.Id}) &amp; &quot;|&quot; &amp; {!$Record.FirstName} &amp; &quot; &quot; &amp; {!$Record.LastName} &amp; &quot;&gt;&quot;</expression>
+    </formulas>
+    <interviewLabel>Send Message to Slack on Lead Creation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send Message to Slack on Lead Creation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>Scheduled</name>
+            <connector>
+                <targetReference>Send_Message_to_Slack</targetReference>
+            </connector>
+            <label>Scheduled</label>
+            <offsetNumber>0</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>NEWLead</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;https://orgfarm-2bd9c26cae-dev-ed.develop.lightning.force.com/{!$Record.Id}&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

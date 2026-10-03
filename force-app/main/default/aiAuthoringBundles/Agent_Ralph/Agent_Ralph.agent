@@ -1,0 +1,133 @@
+system:
+    instructions: "You are an AI Agent."
+
+    messages:
+        welcome: |
+            Hi, I'm an AI service assistant. How can I help you?
+        error: "Sorry, it looks like something has gone wrong."
+
+config:
+  agent_label: "Agent Ralph"
+  developer_name: "Agent_Ralph"
+  description: "Deliver personalized customer interactions with an autonomous AI agent. Agentforce Service Agent intelligently supports your customers with common inquiries and escalates complex issues."
+  default_agent_user: "event_inquiries_agent2@00dgk000000dxxc.ext"
+
+language:
+    default_locale: "en_US"
+    additional_locales: "en_GB"
+    all_additional_locales: False
+
+variables:
+    authenticationKey: mutable string
+        description: "Stores the authentication key that's used to generate the verification code."
+        visibility: "Internal"
+    customerId: mutable string
+        description: "Stores the Salesforce user ID or contact ID."
+        visibility: "Internal"
+    customerType: mutable string
+        description: "Stores the customer ID type, whether it's a Salesforce user or a contact."
+        visibility: "Internal"
+    isVerified: mutable boolean = False
+        label: "isVerified"
+        description: "Stores a boolean value that indicates whether the customer code is verified."
+        visibility: "Internal"
+    EndUserId: linked string
+        source: @MessagingSession.MessagingEndUserId
+        description: "This variable may also be referred to as MessagingEndUser Id"
+    RoutableId: linked string
+        source: @MessagingSession.Id
+        description: "This variable may also be referred to as MessagingSession Id"
+    ContactId: linked string
+        source: @MessagingEndUser.ContactId
+        description: "This variable may also be referred to as MessagingEndUser ContactId"
+    EndUserLanguage: linked string
+        source: @MessagingSession.EndUserLanguage
+        description: "This variable may also be referred to as MessagingSession EndUserLanguage"
+    VerifiedCustomerId: mutable string
+        description: "This variable may also be referred to as VerifiedCustomerId"
+        visibility: "Internal"
+
+knowledge:
+    rag_feature_config_id: ""
+    citations_enabled: False
+    citations_url: ""
+
+topic Create_a_Case:
+    label: "Create a Case"
+
+    description: "Handles requests where additional information is required and a case needs to be created."
+
+    reasoning:
+        instructions: ->
+            | If the user requests additional information, purchasing questions, or contract questions, initiate the process to create a case and gather the information needed to create that case.
+              Ask clarifying questions to gather all necessary details for the case.
+              Ensure the user provides sufficient information to proceed with case creation.
+              Confirm with the user before finalizing the case creation.
+              Only use this action if you were not able to provide the information that the user was requesting.
+              If a user asks how they can renew, purchase qss, request a quote, or determine which qss they need please gather information necessary to create a case.
+
+        actions:
+            Create_Agent_Ralph_Case: @actions.Create_Agent_Ralph_Case
+                description: ""
+                with CaseEmail = ...
+                with CasePersonName = ...
+                with caseDescription = ...
+                with caseSubject = ...
+                with contactRecord = ...
+
+
+
+
+
+    actions:
+        Create_Agent_Ralph_Case:
+            description: |
+                Create a Case based on user inputs.
+            label: "Create Agent Ralph Case"
+            require_user_confirmation: False
+            include_in_progress_indicator: True
+            progress_indicator_message: "Contacting Assistance"
+            source: "Create_Agent_Ralph_Case"
+            target: "flow://Create_Agent_Ralph_Case"
+                                                                        
+            inputs:
+                "CaseEmail": string
+                    description: |
+                      Email
+                    label: "CaseEmail"
+                    is_required: True
+                    is_user_input: True
+                "CasePersonName": string
+                    description: |
+                      Person Name
+                    label: "CasePersonName"
+                    is_required: False
+                    is_user_input: True
+                "caseDescription": string
+                    description: |
+                      Description
+                    label: "caseDescription"
+                    is_required: False
+                    is_user_input: False
+                "caseSubject": string
+                    description: |
+                      Subject
+                    label: "caseSubject"
+                    is_required: False
+                    is_user_input: False
+                "contactRecord": object
+                    description: |
+                      ContactRecord
+                    label: "contactRecord"
+                    is_required: False
+                    is_user_input: False
+                    complex_data_type_name: "lightning__recordInfoType"
+                                                                        
+            outputs:
+                "caseRecord": object
+                    description: |
+                      CaseRecord
+                    label: "caseRecord"
+                    is_displayable: False
+                    filter_from_agent: False
+                    complex_data_type_name: "lightning__recordInfoType"

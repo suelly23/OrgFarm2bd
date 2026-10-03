@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <description>Record-Triggered Flow: when a Contact is created, generates a welcome document using the default DocGen template for Contact, saves it as a File on the Contact, and creates a Task for the Contact Owner. Requires at least one Contact template with Default Template checked.</description>
+    <label>DocGen: Welcome Pack on New Contact</label>
+    <processType>AutoLaunchedFlow</processType>
+</Flow>

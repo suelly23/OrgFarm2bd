@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_8</activeVersionIdentifier>
+    <developerName>Prompt_Template</developerName>
+    <masterLabel>Prompt Template</masterLabel>
+    <overridable>false</overridable>
+    <relatedEntity>Coaching_Session__c</relatedEntity>
+    <relatedField>Coaching_Session__c.Preparation_Notes__c</relatedField>
+    <templateVersions>
+        <content>Your Job is to provide a note and guidance for the Coach on what they need to know for an upcoming Coaching Session. This response will be used to populate the session preparation notes field on the Coaching Session record.
+Use the following context to ground your final response
+Context:
+Client&apos;s Name: {!$Input:Coaching_Session__c.Client_s_Name__r.Name}
+Client&apos;s Birthday: {!$Input:Coaching_Session__c.Client_s_Name__r.Birthdate}
+Client&apos;s Next Scheduled Session Date: 
+Is Client a Subscriber: They are if the value of  is true. 
+Client&apos;s Subscriber Type: {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber_Types__c}
+Client&apos;s Interest Areas: {!$Input:Coaching_Session__c.Client_s_Name__r.Interest_Areas__c}
+Recent coaching sessions (these are the recently completed coaching session notes separated by &quot;---&quot;, extract past experience and interests): 
+FLOW: Prompt_Template_Triggered_Flow
+Note on Subscriber Types:
+There are three types: &quot;Career&quot;, &quot;Personal&quot; and &quot;General&quot;
+- &quot;Career&quot; focuses on progress and advancement at the work place
+- &quot;Personal&quot; focuses on wellbeing and happiness outside of work.
+- &quot;General&quot; is a healthy mix of the two other types.
+Note on Session Types:
+There are 2 types of Session Types Inaugural (first) and Follow-up sessions. Specify which type is relevant and the duration of the session. If there are one or more than one completed past coaching session records, then the Follow-up session type will be used, otherwise Inaugurual will be set up.
+- Inaugural: If the client does not have any previous consultation on record, then this format will be used. This coaching session will be guided toward setting up a plan with the client. Discussions should be centered around making sure they have the proper readiness to start, discussing their interests, discussing their past experience, providing them with a few guidance tips on getting started, and telling them what to expect. Usually go for 1.5 hour. A follow-up is usually scheduled for one month after the first one (this session).
+- Follow-up: These sessions are monthly check-ins with the customers to review their progress and answer questions for them based on what they are dealing with. Usually go for 1 hour.
+- If {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c} value is false then the client is not subscribed. Warn the coach: Include a message saying confirm subscription before visit. If the client is subscribed (value = true) do not include a message for the coach about this.
+Response:
+- Your response should give the coach information to go into the consultation and know what to discuss with the customer.
+- Your response should contain important information about the customer, their interests, structure on how the coaching session should go, guidance for their client based on interests and past experience.
+- Use break-lines in your response to segment between different ideas
+- We are writing for a Salesforce Rich Text Field, so you&apos;ll need to follow this guidance below:
+- Provide output in HTML format. Only Output the text inside the tag pair.
+- Use bullets or numbered lists to highlight key points.
+- Enhance readability by adding rich text formatting (i.e., font, text color, background color, etc.) where possible.
+- Add HTML tags to improve readability
+
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Coaching_Session__c</definition>
+            <referenceName>Input:Coaching_Session__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Your Job is to provide a note and guidance for the Coach on what they need to know for an upcoming Coaching Session. This response will be used to populate the session preparation notes field on the Coaching Session record.
+Use the following context to ground your final response
+Context:
+Client&apos;s Name: {!$Input:Coaching_Session__c.Client_s_Name__r.Name}
+Client&apos;s Birthday: {!$Input:Coaching_Session__c.Client_s_Name__r.Birthdate}
+Client&apos;s Next Scheduled Session Date: 
+Is Client a Subscriber: They are if the value of  is true. 
+Client&apos;s Subscriber Type: {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber_Types__c}
+Client&apos;s Interest Areas: {!$Input:Coaching_Session__c.Client_s_Name__r.Interest_Areas__c}
+Recent coaching sessions (these are the recently completed coaching session notes separated by &quot;---&quot;, extract past experience and interests): 
+FLOW: {!$Flow:Prompt_Template_Triggered_Flow.Prompt}
+Note on Subscriber Types:
+There are three types: &quot;Career&quot;, &quot;Personal&quot; and &quot;General&quot;
+- &quot;Career&quot; focuses on progress and advancement at the work place
+- &quot;Personal&quot; focuses on wellbeing and happiness outside of work.
+- &quot;General&quot; is a healthy mix of the two other types.
+Note on Session Types:
+There are 2 types of Session Types Inaugural (first) and Follow-up sessions. Specify which type is relevant and the duration of the session. If there are one or more than one completed past coaching session records, then the Follow-up session type will be used, otherwise Inaugurual will be set up.
+- Inaugural: If the client does not have any previous consultation on record, then this format will be used. This coaching session will be guided toward setting up a plan with the client. Discussions should be centered around making sure they have the proper readiness to start, discussing their interests, discussing their past experience, providing them with a few guidance tips on getting started, and telling them what to expect. Usually go for 1.5 hour. A follow-up is usually scheduled for one month after the first one (this session).
+- Follow-up: These sessions are monthly check-ins with the customers to review their progress and answer questions for them based on what they are dealing with. Usually go for 1 hour.
+- If {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c} value is false then the client is not subscribed. Warn the coach: Include a message saying confirm subscription before visit. If the client is subscribed (value = true) do not include a message for the coach about this.
+Response:
+- Your response should give the coach information to go into the consultation and know what to discuss with the customer.
+- Your response should contain important information about the customer, their interests, structure on how the coaching session should go, guidance for their client based on interests and past experience.
+- Use break-lines in your response to segment between different ideas
+- We are writing for a Salesforce Rich Text Field, so you&apos;ll need to follow this guidance below:
+- Provide output in HTML format. Only Output the text inside the tag pair.
+- Use bullets or numbered lists to highlight key points.
+- Enhance readability by adding rich text formatting (i.e., font, text color, background color, etc.) where possible.
+- Add HTML tags to improve readability
+
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Coaching_Session__c</definition>
+            <referenceName>Input:Coaching_Session__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://Prompt_Template_Triggered_Flow</definition>
+            <parameters>
+                <definition>SOBJECT://Coaching_Session__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Coaching_Session__c}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Prompt_Template_Triggered_Flow</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Your Job is to provide a note and guidance for the Coach on what they need to know for an upcoming Coaching Session. This response will be used to populate the session preparation notes field on the Coaching Session record.
+Use the following context to ground your final response
+Context:
+Client&apos;s Name: {!$Input:Coaching_Session__c.Client_s_Name__r.FirstName} 
+Client&apos;s Birthday: {!$Input:Coaching_Session__c.Client_s_Name__r.Birthdate}
+Client&apos;s Next Scheduled Session Date: 
+Is Client a Subscriber: They are if the value of  is true. 
+Client&apos;s Subscriber Type: {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber_Types__c}
+Client&apos;s Interest Areas: {!$Input:Coaching_Session__c.Client_s_Name__r.Interest_Areas__c}
+Recent coaching sessions (these are the recently completed coaching session notes separated by &quot;---&quot;, extract past experience and interests): 
+FLOW: {!$Flow:Prompt_Template_Triggered_Flow.Prompt}
+Note on Subscriber Types:
+There are three types: &quot;Career&quot;, &quot;Personal&quot; and &quot;General&quot;
+- &quot;Career&quot; focuses on progress and advancement at the work place
+- &quot;Personal&quot; focuses on wellbeing and happiness outside of work.
+- &quot;General&quot; is a healthy mix of the two other types.
+Note on Session Types:
+There are 2 types of Session Types Inaugural (first) and Follow-up sessions. Specify which type is relevant and the duration of the session. If there are one or more than one completed past coaching session records, then the Follow-up session type will be used, otherwise Inaugurual will be set up.
+- Inaugural: If the client does not have any previous consultation on record, then this format will be used. This coaching session will be guided toward setting up a plan with the client. Discussions should be centered around making sure they have the proper readiness to start, discussing their interests, discussing their past experience, providing them with a few guidance tips on getting started, and telling them what to expect. Usually go for 1.5 hour. A follow-up is usually scheduled for one month after the first one (this session).
+- Follow-up: These sessions are monthly check-ins with the customers to review their progress and answer questions for them based on what they are dealing with. Usually go for 1 hour.
+- If {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c} value is false then the client is not subscribed. Warn the coach: Include a message saying confirm subscription before visit. If the client is subscribed (value = true) do not include a message for the coach about this.
+Response:
+- Your response should give the coach information to go into the consultation and know what to discuss with the customer.
+- Your response should contain important information about the customer, their interests, structure on how the coaching session should go, guidance for their client based on interests and past experience.
+- Use break-lines in your response to segment between different ideas
+- We are writing for a Salesforce Rich Text Field, so you&apos;ll need to follow this guidance below:
+- Provide output in HTML format. Only Output the text inside the tag pair.
+- Use bullets or numbered lists to highlight key points.
+- Enhance readability by adding rich text formatting (i.e., font, text color, background color, etc.) where possible.
+- Add HTML tags to improve readability
+
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Coaching_Session__c</definition>
+            <referenceName>Input:Coaching_Session__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://Prompt_Template_Triggered_Flow</definition>
+            <parameters>
+                <definition>SOBJECT://Coaching_Session__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Coaching_Session__c}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Prompt_Template_Triggered_Flow</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Your Job is to provide a note and guidance for the Coach on what they need to know for an upcoming Coaching Session. This response will be used to populate the session preparation notes field on the Coaching Session record.
+Use the following context to ground your final response
+Context:
+Client&apos;s Name: {!$Input:Coaching_Session__c.Client_s_Name__r.FirstName} 
+Client&apos;s Birthday: {!$Input:Coaching_Session__c.Client_s_Name__r.Birthdate}
+Client&apos;s Next Scheduled Session Date: 
+Is Client a Subscriber: They are if the value of  is true. 
+Client&apos;s Subscriber Type: {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber_Types__c}
+Client&apos;s Interest Areas: {!$Input:Coaching_Session__c.Client_s_Name__r.Interest_Areas__c}
+Recent coaching sessions (these are the recently completed coaching session notes separated by &quot;---&quot;, extract past experience and interests): 
+FLOW: {!$Flow:Prompt_Template_Triggered_Flow.Prompt}
+Note on Subscriber Types:
+There are three types: &quot;Career&quot;, &quot;Personal&quot; and &quot;General&quot;
+- &quot;Career&quot; focuses on progress and advancement at the work place
+- &quot;Personal&quot; focuses on wellbeing and happiness outside of work.
+- &quot;General&quot; is a healthy mix of the two other types.
+Note on Session Types:
+There are 2 types of Session Types Inaugural (first) and Follow-up sessions. Specify which type is relevant and the duration of the session. If there are one or more than one completed past coaching session records, then the Follow-up session type will be used, otherwise Inaugurual will be set up.
+- Inaugural: If the client does not have any previous consultation on record, then this format will be used. This coaching session will be guided toward setting up a plan with the client. Discussions should be centered around making sure they have the proper readiness to start, discussing their interests, discussing their past experience, providing them with a few guidance tips on getting started, and telling them what to expect. Usually go for 1.5 hour. A follow-up is usually scheduled for one month after the first one (this session).
+- Follow-up: These sessions are monthly check-ins with the customers to review their progress and answer questions for them based on what they are dealing with. Usually go for 1 hour.
+- If {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c} value is false then the client is not subscribed. Warn the coach: Include a message saying confirm subscription before visit. If the client is subscribed (value = true) do not include a message for the coach about this.
+Response:
+- Your response should give the coach information to go into the consultation and know what to discuss with the customer.
+- Your response should contain important information about the customer, their interests, structure on how the coaching session should go, guidance for their client based on interests and past experience.
+- Use break-lines in your response to segment between different ideas
+- We are writing for a Salesforce Rich Text Field, so you&apos;ll need to follow this guidance below:
+- Provide output in HTML format. Only Output the text inside the tag pair.
+- Use bullets or numbered lists to highlight key points.
+- Enhance readability by adding rich text formatting (i.e., font, text color, background color, etc.) where possible.
+- Add HTML tags to improve readability
+
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Coaching_Session__c</definition>
+            <referenceName>Input:Coaching_Session__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://Prompt_Template_Triggered_Flow</definition>
+            <label>Prompt Template Triggered Flow</label>
+            <parameters>
+                <definition>SOBJECT://Coaching_Session__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Coaching_Session__c}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Prompt_Template_Triggered_Flow</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_4</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Your Job is to provide a note and guidance for the Coach on what they need to know for an upcoming Coaching Session. This response will be used to populate the session preparation notes field on the Coaching Session record.
+Use the following context to ground your final response
+Context:
+Client&apos;s Name: {!$Input:Coaching_Session__c.Client_s_Name__r.FirstName} 
+Client&apos;s Birthday: {!$Input:Coaching_Session__c.Client_s_Name__r.Birthdate}
+Client&apos;s Next Scheduled Session Date: 
+Is Client a Subscriber: They are if the value of {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c} is true. 
+Subscriber: {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c}
+Client&apos;s Subscriber Type: {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber_Types__c}
+Client&apos;s Interest Areas: {!$Input:Coaching_Session__c.Client_s_Name__r.Interest_Areas__c}
+Recent coaching sessions (these are the recently completed coaching session notes separated by &quot;---&quot;, extract past experience and interests): 
+FLOW: {!$Flow:Prompt_Template_Triggered_Flow.Prompt}
+Note on Subscriber Types:
+There are three types: &quot;Career&quot;, &quot;Personal&quot; and &quot;General&quot;
+- &quot;Career&quot; focuses on progress and advancement at the work place
+- &quot;Personal&quot; focuses on wellbeing and happiness outside of work.
+- &quot;General&quot; is a healthy mix of the two other types.
+Note on Session Types:
+There are 2 types of Session Types Inaugural (first) and Follow-up sessions. Specify which type is relevant and the duration of the session. If there are one or more than one completed past coaching session records, then the Follow-up session type will be used, otherwise Inaugurual will be set up.
+- Inaugural: If the client does not have any previous consultation on record, then this format will be used. This coaching session will be guided toward setting up a plan with the client. Discussions should be centered around making sure they have the proper readiness to start, discussing their interests, discussing their past experience, providing them with a few guidance tips on getting started, and telling them what to expect. Usually go for 1.5 hour. A follow-up is usually scheduled for one month after the first one (this session).
+- Follow-up: These sessions are monthly check-ins with the customers to review their progress and answer questions for them based on what they are dealing with. Usually go for 1 hour.
+- If {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c} value is false then the client is not subscribed. Warn the coach: Include a message saying confirm subscription before visit. If the client is subscribed (value = true) do not include a message for the coach about this.
+Response:
+- Your response should give the coach information to go into the consultation and know what to discuss with the customer.
+- Your response should contain important information about the customer, their interests, structure on how the coaching session should go, guidance for their client based on interests and past experience.
+- Use break-lines in your response to segment between different ideas
+- We are writing for a Salesforce Rich Text Field, so you&apos;ll need to follow this guidance below:
+- Provide output in HTML format. Only Output the text inside the tag pair.
+- Use bullets or numbered lists to highlight key points.
+- Enhance readability by adding rich text formatting (i.e., font, text color, background color, etc.) where possible.
+- Add HTML tags to improve readability
+
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Coaching_Session__c</definition>
+            <referenceName>Input:Coaching_Session__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://Prompt_Template_Triggered_Flow</definition>
+            <label>Prompt Template Triggered Flow</label>
+            <parameters>
+                <definition>SOBJECT://Coaching_Session__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Coaching_Session__c}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Prompt_Template_Triggered_Flow</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_8</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Your Job is to provide a note and guidance for the Coach on what they need to know for an upcoming Coaching Session. This response will be used to populate the session preparation notes field on the Coaching Session record.
+Use the following context to ground your final response
+Context:
+Client&apos;s Name: {!$Input:Coaching_Session__c.Client_s_Name__r.FirstName} 
+Client&apos;s Birthday: {!$Input:Coaching_Session__c.Client_s_Name__r.Birthdate}
+Client&apos;s Next Scheduled Session Date: 
+Is Client a Subscriber: They are if the value of {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c} is true. 
+Client&apos;s Subscriber Type: {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber_Types__c}
+Client&apos;s Interest Areas: {!$Input:Coaching_Session__c.Client_s_Name__r.Interest_Areas__c}
+Recent coaching sessions (these are the recently completed coaching session notes separated by &quot;---&quot;, extract past experience and interests): 
+FLOW: {!$Flow:Prompt_Template_Triggered_Flow.Prompt}
+Note on Subscriber Types:
+There are three types: &quot;Career&quot;, &quot;Personal&quot; and &quot;General&quot;
+- &quot;Career&quot; focuses on progress and advancement at the work place
+- &quot;Personal&quot; focuses on wellbeing and happiness outside of work.
+- &quot;General&quot; is a healthy mix of the two other types.
+Note on Session Types:
+There are 2 types of Session Types Inaugural (first) and Follow-up sessions. Specify which type is relevant and the duration of the session. If there are one or more than one completed past coaching session records, then the Follow-up session type will be used, otherwise Inaugurual will be set up.
+- Inaugural: If the client does not have any previous consultation on record, then this format will be used. This coaching session will be guided toward setting up a plan with the client. Discussions should be centered around making sure they have the proper readiness to start, discussing their interests, discussing their past experience, providing them with a few guidance tips on getting started, and telling them what to expect. Usually go for 1.5 hour. A follow-up is usually scheduled for one month after the first one (this session).
+- Follow-up: These sessions are monthly check-ins with the customers to review their progress and answer questions for them based on what they are dealing with. Usually go for 1 hour.
+- If {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c} value is false then the client is not subscribed. Warn the coach: Include a message saying confirm subscription before visit. If the client is subscribed (value = true) do not include a message for the coach about this.
+Response:
+- Your response should give the coach information to go into the consultation and know what to discuss with the customer.
+- Your response should contain important information about the customer, their interests, structure on how the coaching session should go, guidance for their client based on interests and past experience.
+- Use break-lines in your response to segment between different ideas
+- We are writing for a Salesforce Rich Text Field, so you&apos;ll need to follow this guidance below:
+- Provide output in HTML format. Only Output the text inside the tag pair.
+- Use bullets or numbered lists to highlight key points.
+- Enhance readability by adding rich text formatting (i.e., font, text color, background color, etc.) where possible.
+- Add HTML tags to improve readability
+
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Coaching_Session__c</definition>
+            <referenceName>Input:Coaching_Session__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>flow://Prompt_Template_Triggered_Flow</definition>
+            <label>Prompt Template Triggered Flow</label>
+            <parameters>
+                <definition>SOBJECT://Coaching_Session__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Coaching_Session__c}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Prompt_Template_Triggered_Flow</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_5</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Your Job is to provide a note and guidance for the Coach on what they need to know for an upcoming Coaching Session. This response will be used to populate the session preparation notes field on the Coaching Session record.
+Use the following context to ground your final response
+Context:
+Client&apos;s Name: {!$Input:Coaching_Session__c.Client_s_Name__r.FirstName} 
+Client&apos;s Birthday: {!$Input:Coaching_Session__c.Client_s_Name__r.Birthdate}
+Client&apos;s Next Scheduled Session Date: 
+Is Client a Subscriber: They are if the value of  is true. 
+Client&apos;s Subscriber Type: {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber_Types__c}
+Client&apos;s Interest Areas: {!$Input:Coaching_Session__c.Client_s_Name__r.Interest_Areas__c}
+Recent coaching sessions (these are the recently completed coaching session notes separated by &quot;---&quot;, extract past experience and interests): 
+FLOW: {!$Flow:Prompt_Template_Triggered_Flow.Prompt}
+Note on Subscriber Types:
+There are three types: &quot;Career&quot;, &quot;Personal&quot; and &quot;General&quot;
+- &quot;Career&quot; focuses on progress and advancement at the work place
+- &quot;Personal&quot; focuses on wellbeing and happiness outside of work.
+- &quot;General&quot; is a healthy mix of the two other types.
+Note on Session Types:
+There are 2 types of Session Types Inaugural (first) and Follow-up sessions. Specify which type is relevant and the duration of the session. If there are one or more than one completed past coaching session records, then the Follow-up session type will be used, otherwise Inaugurual will be set up.
+- Inaugural: If the client does not have any previous consultation on record, then this format will be used. This coaching session will be guided toward setting up a plan with the client. Discussions should be centered around making sure they have the proper readiness to start, discussing their interests, discussing their past experience, providing them with a few guidance tips on getting started, and telling them what to expect. Usually go for 1.5 hour. A follow-up is usually scheduled for one month after the first one (this session).
+- Follow-up: These sessions are monthly check-ins with the customers to review their progress and answer questions for them based on what they are dealing with. Usually go for 1 hour.
+- If {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c} value is false then the client is not subscribed. Warn the coach: Include a message saying confirm subscription before visit. If the client is subscribed (value = true) do not include a message for the coach about this.
+Response:
+- Your response should give the coach information to go into the consultation and know what to discuss with the customer.
+- Your response should contain important information about the customer, their interests, structure on how the coaching session should go, guidance for their client based on interests and past experience.
+- Use break-lines in your response to segment between different ideas
+- We are writing for a Salesforce Rich Text Field, so you&apos;ll need to follow this guidance below:
+- Provide output in HTML format. Only Output the text inside the tag pair.
+- Use bullets or numbered lists to highlight key points.
+- Enhance readability by adding rich text formatting (i.e., font, text color, background color, etc.) where possible.
+- Add HTML tags to improve readability
+
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Coaching_Session__c</definition>
+            <referenceName>Input:Coaching_Session__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>flow://Prompt_Template_Triggered_Flow</definition>
+            <label>Prompt Template Triggered Flow</label>
+            <parameters>
+                <definition>SOBJECT://Coaching_Session__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Coaching_Session__c}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Prompt_Template_Triggered_Flow</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_6</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Your Job is to provide a note and guidance for the Coach on what they need to know for an upcoming Coaching Session. This response will be used to populate the session preparation notes field on the Coaching Session record.
+Use the following context to ground your final response
+Context:
+Client&apos;s Name: {!$Input:Coaching_Session__c.Client_s_Name__r.FirstName} 
+Client&apos;s Birthday: {!$Input:Coaching_Session__c.Client_s_Name__r.Birthdate}
+Client&apos;s Next Scheduled Session Date: 
+Is Client a Subscriber: They are if the value of {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c} is true. 
+Client&apos;s Subscriber Type: {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber_Types__c}
+Client&apos;s Interest Areas: {!$Input:Coaching_Session__c.Client_s_Name__r.Interest_Areas__c}
+Recent coaching sessions (these are the recently completed coaching session notes separated by &quot;---&quot;, extract past experience and interests): 
+FLOW: {!$Flow:Prompt_Template_Triggered_Flow.Prompt}
+Note on Subscriber Types:
+There are three types: &quot;Career&quot;, &quot;Personal&quot; and &quot;General&quot;
+- &quot;Career&quot; focuses on progress and advancement at the work place
+- &quot;Personal&quot; focuses on wellbeing and happiness outside of work.
+- &quot;General&quot; is a healthy mix of the two other types.
+Note on Session Types:
+There are 2 types of Session Types Inaugural (first) and Follow-up sessions. Specify which type is relevant and the duration of the session. If there are one or more than one completed past coaching session records, then the Follow-up session type will be used, otherwise Inaugurual will be set up.
+- Inaugural: If the client does not have any previous consultation on record, then this format will be used. This coaching session will be guided toward setting up a plan with the client. Discussions should be centered around making sure they have the proper readiness to start, discussing their interests, discussing their past experience, providing them with a few guidance tips on getting started, and telling them what to expect. Usually go for 1.5 hour. A follow-up is usually scheduled for one month after the first one (this session).
+- Follow-up: These sessions are monthly check-ins with the customers to review their progress and answer questions for them based on what they are dealing with. Usually go for 1 hour.
+- If {!$Input:Coaching_Session__c.Client_s_Name__r.Subscriber__c} value is false then the client is not subscribed. Warn the coach: Include a message saying confirm subscription before visit. If the client is subscribed (value = true) do not include a message for the coach about this.
+Response:
+- Your response should give the coach information to go into the consultation and know what to discuss with the customer.
+- Your response should contain important information about the customer, their interests, structure on how the coaching session should go, guidance for their client based on interests and past experience.
+- Use break-lines in your response to segment between different ideas
+- We are writing for a Salesforce Rich Text Field, so you&apos;ll need to follow this guidance below:
+- Provide output in HTML format. Only Output the text inside the tag pair.
+- Use bullets or numbered lists to highlight key points.
+- Enhance readability by adding rich text formatting (i.e., font, text color, background color, etc.) where possible.
+- Add HTML tags to improve readability
+
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Coaching_Session__c</definition>
+            <referenceName>Input:Coaching_Session__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://Prompt_Template_Triggered_Flow</definition>
+            <label>Prompt Template Triggered Flow</label>
+            <parameters>
+                <definition>SOBJECT://Coaching_Session__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Coaching_Session__c}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Prompt_Template_Triggered_Flow</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_7</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__fieldCompletion</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sessions Type --></label>
+    <name>Sessions_Type__c</name>
+    <picklistValues>
+        <masterLabel>Follow-up</masterLabel>
+        <translation><!-- Follow-up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inaugural</masterLabel>
+        <translation><!-- Inaugural --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

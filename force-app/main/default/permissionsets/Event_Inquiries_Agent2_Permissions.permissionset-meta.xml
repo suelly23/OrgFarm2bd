@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows custom permissions for Agentforce Agent : Event_Inquiries_Agent2&apos;s agent user : event_inquiries_agent2@00dgk000000dxxc.ext.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Event_Inquiries_Agent2 Permissions</label>
+    <license>Einstein Agent</license>
+</PermissionSet>

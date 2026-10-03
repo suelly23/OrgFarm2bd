@@ -1,0 +1,1963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Developer Edition --></label>
+        <name>Get_Started_with_Agentforce</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- Add Header --></label>
+        <name>Add_Header</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add Param --></label>
+        <name>Add_Param</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add Target Key --></label>
+        <name>Add_Target_Key</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Hero Description Part 1 --></label>
+        <name>Agentforce_Hero_Desc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Hero Description Part 2 --></label>
+        <name>Agentforce_Hero_Desc_Cont</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Launch Card Action --></label>
+        <name>Agentforce_Launch_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Launch Card Description --></label>
+        <name>Agentforce_Launch_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Launch Card Title --></label>
+        <name>Agentforce_Launch_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Learn Card Action --></label>
+        <name>Agentforce_Learn_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Learn Card Description --></label>
+        <name>Agentforce_Learn_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Learn Card Title --></label>
+        <name>Agentforce_Learn_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Practice Card Action --></label>
+        <name>Agentforce_Practice_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Practice Card Description --></label>
+        <name>Agentforce_Practice_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Practice Card Title --></label>
+        <name>Agentforce_Practice_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Welcome Hero Title --></label>
+        <name>Agentforce_Welcome_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Body Label --></label>
+        <name>Body_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Compress Request body to gzip? --></label>
+        <name>Compress_Request_body_to_gzip</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Confirm Object Type --></label>
+        <name>Confirm_Object_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error Message : --></label>
+        <name>Error_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Extract JSON Values --></label>
+        <name>Extract_JSON_Values</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HTTP Method --></label>
+        <name>HTTP_Method</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Input JSON String --></label>
+        <name>Input_JSON_String</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JSON_ARRAY_EXCEPTION --></label>
+        <name>JSON_ARRAY_EXCEPTION</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Key Label --></label>
+        <name>Key_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Make HTTP Call --></label>
+        <name>Make_HTTP_Call</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Map JSON Array --></label>
+        <name>Map_JSON_Array</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Method is invalid --></label>
+        <name>Method_is_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Request Body as Blob? --></label>
+        <name>Request_Body_as_Blob</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Response Result --></label>
+        <name>Response_Result</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Set this Output --></label>
+        <name>Set_this_Output</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Set this output field: --></label>
+        <name>Set_this_output_field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Specify Headers --></label>
+        <name>Specify_Headers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Specify Params --></label>
+        <name>Specify_Params</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Specify the keys that you want to extract: --></label>
+        <name>Specify_the_keys_that_you_want_to_extract</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Specify the keys that you want to extract from the objects in the array: --></label>
+        <name>Specify_the_keys_that_you_want_to_extract_from_the_objects_in_the_array</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Status : --></label>
+        <name>Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Status code : --></label>
+        <name>Status_code</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Target Object Type --></label>
+        <name>Target_Object_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Test Callout --></label>
+        <name>Test_Callout</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Timeout in ms --></label>
+        <name>Timeout_in_ms</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- To the value of this key --></label>
+        <name>To_the_value_of_this_key</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- URL is invalid --></label>
+        <name>URL_is_invalid</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Use these values for: --></label>
+        <name>Use_these_values_for</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Value Label --></label>
+        <name>Value_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AccessLevel --></label>
+        <name>fsc_AccessLevel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Back --></label>
+        <name>fsc_Back</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ButtonIsNotSupportedMessage --></label>
+        <name>fsc_ButtonIsNotSupportedMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ConditionLogicHelpText --></label>
+        <name>fsc_ConditionLogicHelpText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete --></label>
+        <name>fsc_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FieldIsNotSupportedMessage --></label>
+        <name>fsc_FieldIsNotSupportedMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- fsc_FieldTypeNotSuportedMessage --></label>
+        <name>fsc_FieldTypeNotSuportedMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- For --></label>
+        <name>fsc_For</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Key Label --></label>
+        <name>fsc_Key_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LackingPermissions --></label>
+        <name>fsc_LackingPermissions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ManagerEmptyMessage --></label>
+        <name>fsc_ManagerEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ComboBox Placeholder Txxt --></label>
+        <name>fsc_Manual_Reference_Allowed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MultipleGroupsForRole --></label>
+        <name>fsc_MultipleGroupsForRole</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Name --></label>
+        <name>fsc_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NonePicklistValueLabel --></label>
+        <name>fsc_NonePicklistValueLabel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OWDReadWrite --></label>
+        <name>fsc_OWDReadWrite</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OwnerAdminModify --></label>
+        <name>fsc_OwnerAdminModify</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PublicGroups --></label>
+        <name>fsc_PublicGroups</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Queues --></label>
+        <name>fsc_Queues</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Read --></label>
+        <name>fsc_Read</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ReadWrite --></label>
+        <name>fsc_ReadWrite</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reason --></label>
+        <name>fsc_Reason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RelatedUsers --></label>
+        <name>fsc_RelatedUsers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Roles --></label>
+        <name>fsc_Roles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search in --></label>
+        <name>fsc_Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SearchFor --></label>
+        <name>fsc_SearchFor</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SetAccessLevel --></label>
+        <name>fsc_SetAccessLevel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SupportedAddCapabilitiesEmptyMessage --></label>
+        <name>fsc_SupportedAddCapabilitiesEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SupportedButtonsEmptyMessage --></label>
+        <name>fsc_SupportedButtonsEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SupportedEditCapabilitiesEmptyMessage --></label>
+        <name>fsc_SupportedEditCapabilitiesEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TooManyResultsMessage --></label>
+        <name>fsc_TooManyResultsMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Type --></label>
+        <name>fsc_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UserOrGroup --></label>
+        <name>fsc_UserOrGroup</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Users --></label>
+        <name>fsc_Users</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Value Label --></label>
+        <name>fsc_Value_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner template category label --></label>
+        <name>portwoodglobal__DocGenRunner_Category</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner template picker placeholder --></label>
+        <name>portwoodglobal__DocGenRunner_ChooseTemplate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner combine-PDFs mode label --></label>
+        <name>portwoodglobal__DocGenRunner_CombinePdfs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner combine-PDFs action button --></label>
+        <name>portwoodglobal__DocGenRunner_CombinePdfsAction</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner create-document button --></label>
+        <name>portwoodglobal__DocGenRunner_CreateDocument</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner create-packet button --></label>
+        <name>portwoodglobal__DocGenRunner_CreatePacket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner document-packet mode label --></label>
+        <name>portwoodglobal__DocGenRunner_DocumentPacket</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner download output option --></label>
+        <name>portwoodglobal__DocGenRunner_Download</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner output destination label --></label>
+        <name>portwoodglobal__DocGenRunner_OutputDestination</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner save-to-record output option --></label>
+        <name>portwoodglobal__DocGenRunner_SaveToRecord</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner select-template label --></label>
+        <name>portwoodglobal__DocGenRunner_SelectTemplate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Runner header subtitle --></label>
+        <name>portwoodglobal__DocGenRunner_Subtitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Change Owner Modal Failed Load Records --></label>
+        <name>spco__Change_Owner_Modal_Failed_Load_Records</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Change Owner Modal Failed Message --></label>
+        <name>spco__Change_Owner_Modal_Failed_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Change Owner Modal Search Users Queues --></label>
+        <name>spco__Change_Owner_Modal_Search_Users_Queues</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Change Owner Modal Success Message --></label>
+        <name>spco__Change_Owner_Modal_Success_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clone Record Modal Failed Message --></label>
+        <name>spco__Clone_Record_Modal_Failed_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clone Record Modal Success Message --></label>
+        <name>spco__Clone_Record_Modal_Success_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Combobox Search Searchable Combobox --></label>
+        <name>spco__Combobox_Search_Searchable_Combobox</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Action --></label>
+        <name>spco__Common_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Actions --></label>
+        <name>spco__Common_Actions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Add --></label>
+        <name>spco__Common_Add</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Ascending --></label>
+        <name>spco__Common_Ascending</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Available --></label>
+        <name>spco__Common_Available</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Cancel --></label>
+        <name>spco__Common_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Change Owner --></label>
+        <name>spco__Common_Change_Owner</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clear --></label>
+        <name>spco__Common_Clear</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Clone --></label>
+        <name>spco__Common_Clone</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Close --></label>
+        <name>spco__Common_Close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Label for &quot;like&quot; SOQL operation --></label>
+        <name>spco__Common_Contains</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Delete --></label>
+        <name>spco__Common_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Descending --></label>
+        <name>spco__Common_Descending</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Does not equal to --></label>
+        <name>spco__Common_Does_Not_Equal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Download --></label>
+        <name>spco__Common_Download</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Edit --></label>
+        <name>spco__Common_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Ends with --></label>
+        <name>spco__Common_Ends_With</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Equals --></label>
+        <name>spco__Common_Equals</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Error --></label>
+        <name>spco__Common_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of missing required value --></label>
+        <name>spco__Common_Error_Missing_Value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Greater or equal --></label>
+        <name>spco__Common_Greater_Or_Equal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Greater than --></label>
+        <name>spco__Common_Greater_Than</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Hide Extra --></label>
+        <name>spco__Common_Hide_Extra</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Is false --></label>
+        <name>spco__Common_Is_False</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Is true --></label>
+        <name>spco__Common_Is_True</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Less or equal --></label>
+        <name>spco__Common_Less_Or_Equal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Less than --></label>
+        <name>spco__Common_Less_Than</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Loading --></label>
+        <name>spco__Common_Loading</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common New --></label>
+        <name>spco__Common_New</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Next --></label>
+        <name>spco__Common_Next</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please check the errors --></label>
+        <name>spco__Common_Please_Check_The_Errors</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Previous --></label>
+        <name>spco__Common_Previous</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Queue --></label>
+        <name>spco__Common_Queue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Remove --></label>
+        <name>spco__Common_Remove</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Required --></label>
+        <name>spco__Common_Required</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Reset to Default --></label>
+        <name>spco__Common_Reset_To_Default</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Save --></label>
+        <name>spco__Common_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Search --></label>
+        <name>spco__Common_Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select a Field message --></label>
+        <name>spco__Common_Select_Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select an Operator message --></label>
+        <name>spco__Common_Select_Operator</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Select Row --></label>
+        <name>spco__Common_Select_Row</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Selected --></label>
+        <name>spco__Common_Selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Show All --></label>
+        <name>spco__Common_Show_All</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Sort --></label>
+        <name>spco__Common_Sort</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Starts with --></label>
+        <name>spco__Common_Starts_With</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common Success --></label>
+        <name>spco__Common_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common User --></label>
+        <name>spco__Common_User</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common View Less --></label>
+        <name>spco__Common_View_Less</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Common View More --></label>
+        <name>spco__Common_View_More</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter Background Color --></label>
+        <name>spco__Conditional_Formatter_Background_Color</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter Color The Row --></label>
+        <name>spco__Conditional_Formatter_Color_The_Row</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter Modal Title --></label>
+        <name>spco__Conditional_Formatter_Conditional_Format</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter limit warning message --></label>
+        <name>spco__Conditional_Formatter_Conditional_Formatting_Limit_Warning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter Duplicated Condition Detected --></label>
+        <name>spco__Conditional_Formatter_Duplicated_Condition_Detected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter Enter Value --></label>
+        <name>spco__Conditional_Formatter_Enter_Value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter Field To Format --></label>
+        <name>spco__Conditional_Formatter_Field_To_Format</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter Font Color --></label>
+        <name>spco__Conditional_Formatter_Font_Color</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter Pick Condition --></label>
+        <name>spco__Conditional_Formatter_Pick_Condition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter Please Set Other Condition --></label>
+        <name>spco__Conditional_Formatter_Please_Set_Other_Condition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter Unsaved Changes Label --></label>
+        <name>spco__Conditional_Formatter_Unsaved_Changes_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditional Formatter Unsaved Changes Message --></label>
+        <name>spco__Conditional_Formatter_Unsaved_Changes_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal filters section --></label>
+        <name>spco__Configuration_Modal_Conditional_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal conditional formatting section --></label>
+        <name>spco__Configuration_Modal_Conditional_Formatting</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration config name field label --></label>
+        <name>spco__Configuration_Modal_Config_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Detect image by URL extension checkbox label --></label>
+        <name>spco__Configuration_Modal_Detect_Image_By_Extension</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Detect image by URL extension help text --></label>
+        <name>spco__Configuration_Modal_Detect_Image_By_Extension_Help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal field label --></label>
+        <name>spco__Configuration_Modal_Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal fields section --></label>
+        <name>spco__Configuration_Modal_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal fill mandatory fields error message --></label>
+        <name>spco__Configuration_Modal_Fill_Mandatory_Fields_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lazy load images checkbox label --></label>
+        <name>spco__Configuration_Modal_Lazy_Load_Images</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Lazy load images help text --></label>
+        <name>spco__Configuration_Modal_Lazy_Load_Images_Help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal mobile field label --></label>
+        <name>spco__Configuration_Modal_Mobile_Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal mobile field help text --></label>
+        <name>spco__Configuration_Modal_Mobile_Field_Help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal mobile field limit label --></label>
+        <name>spco__Configuration_Modal_Mobile_Field_Limit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal mobile field limit help text --></label>
+        <name>spco__Configuration_Modal_Mobile_Field_Limit_Help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal mobile fields section --></label>
+        <name>spco__Configuration_Modal_Mobile_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration object name field label --></label>
+        <name>spco__Configuration_Modal_Object_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal Other section --></label>
+        <name>spco__Configuration_Modal_Other</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal sorting section --></label>
+        <name>spco__Configuration_Modal_Sorting</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal success toast message --></label>
+        <name>spco__Configuration_Modal_Success_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal table row height label --></label>
+        <name>spco__Configuration_Modal_Table_Row_Height</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal table row height help text --></label>
+        <name>spco__Configuration_Modal_Table_Row_Height_Help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List configuration modal title --></label>
+        <name>spco__Configuration_Modal_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Create Record Modal Error While Get Record Types --></label>
+        <name>spco__Create_Record_Modal_Error_While_Get_Record_Types</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Create Record Modal Failed Message --></label>
+        <name>spco__Create_Record_Modal_Failed_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Create Record Modal Record Created --></label>
+        <name>spco__Create_Record_Modal_Record_Created</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Create Record Modal Record Id --></label>
+        <name>spco__Create_Record_Modal_Record_Id</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Create Record Modal Select A Record Type --></label>
+        <name>spco__Create_Record_Modal_Select_A_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Custom Data Table Mass Update Checkbox --></label>
+        <name>spco__Custom_Data_Table_Mass_Update_Checkbox</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Custom Error --></label>
+        <name>spco__Custom_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Custom Mobile Record Select Row --></label>
+        <name>spco__Custom_Mobile_Record_Select_Row</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Custom Mobile Record View Records Selected --></label>
+        <name>spco__Custom_Mobile_Record_View_Records_Selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Custom_Search_Search_Dots --></label>
+        <name>spco__Custom_Search_Search_Dots</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete Record Modal Delete Record --></label>
+        <name>spco__Delete_Record_Modal_Delete_Record</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete Record Modal Failed Message --></label>
+        <name>spco__Delete_Record_Modal_Failed_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete Record Modal Remove Record Question --></label>
+        <name>spco__Delete_Record_Modal_Remove_Record_Question</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete Record Modal Success Message --></label>
+        <name>spco__Delete_Record_Modal_Success_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Edit Record Modal Failed Message --></label>
+        <name>spco__Edit_Record_Modal_Failed_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Edit Record Modal Success Message --></label>
+        <name>spco__Edit_Record_Modal_Success_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Configuration File Uploaded Message --></label>
+        <name>spco__Export_To_Excel_Configuration_File_Uploaded_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Configuration Import Button Label --></label>
+        <name>spco__Export_To_Excel_Configuration_Import_Button_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Configuration File Input Label --></label>
+        <name>spco__Export_To_Excel_Configuration_Input_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Contact Administrator --></label>
+        <name>spco__Export_To_Excel_Contact_Administrator</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Error Generate File --></label>
+        <name>spco__Export_To_Excel_Error_Generate_File</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Error Initialize Component --></label>
+        <name>spco__Export_To_Excel_Error_Initialize_Component</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Error Retrieve Fields --></label>
+        <name>spco__Export_To_Excel_Error_Retrieve_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel popup Error Save Configuration Title --></label>
+        <name>spco__Export_To_Excel_Error_Save_Configuration_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Error Unable To Export Data --></label>
+        <name>spco__Export_To_Excel_Error_Unable_To_Export_Data</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel ExcelJS Not Found --></label>
+        <name>spco__Export_To_Excel_ExcelJS_Not_Found</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Export To File --></label>
+        <name>spco__Export_To_Excel_Export_To_File</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Exported Records --></label>
+        <name>spco__Export_To_Excel_Exported_Records</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Library Not Loaded --></label>
+        <name>spco__Export_To_Excel_Library_Not_Loaded</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Configuration Modal Title --></label>
+        <name>spco__Export_To_Excel_Modal_Title_Configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Select Fields To Export --></label>
+        <name>spco__Export_To_Excel_Select_Fields_To_Export</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Select Type For File --></label>
+        <name>spco__Export_To_Excel_Select_Type_For_File</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Select Type Of File --></label>
+        <name>spco__Export_To_Excel_Select_Type_Of_File</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export To Excel Select Type Of File Configuration --></label>
+        <name>spco__Export_To_Excel_Select_Type_Of_File_Configuration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of Filter Logic beginning with invalid Token. --></label>
+        <name>spco__Filter_Logic_Error_Invalid_Beginning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of invalid usage of Close Separator token. --></label>
+        <name>spco__Filter_Logic_Error_Invalid_Close_Separator_Usage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of invalid usage of Close Separator token. --></label>
+        <name>spco__Filter_Logic_Error_Invalid_Early_Close_Separator</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of invalid usage of Filter token. --></label>
+        <name>spco__Filter_Logic_Error_Invalid_Filter_Usage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of invalid usage of Open Separator token. --></label>
+        <name>spco__Filter_Logic_Error_Invalid_Open_Separator_Usage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of invalid mixing of Operator token in the same group. --></label>
+        <name>spco__Filter_Logic_Error_Invalid_Operator_Mixing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of invalid usage of Operator token. --></label>
+        <name>spco__Filter_Logic_Error_Invalid_Operator_Usage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of invalid usage of Close Separator token. --></label>
+        <name>spco__Filter_Logic_Error_Missing_Close_Separator</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of missing Filter token. --></label>
+        <name>spco__Filter_Logic_Error_Missing_Filter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of non-existing filter number. --></label>
+        <name>spco__Filter_Logic_Error_Unknown_Filter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error informing of unsupported keyword was used. --></label>
+        <name>spco__Filter_Logic_Error_Unknown_Token</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add condition to SOQL query --></label>
+        <name>spco__Filters_Add_Condition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error message for custom conditions-related issues --></label>
+        <name>spco__Filters_Additional_Numbers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Only AND operators in SOQL --></label>
+        <name>spco__Filters_All_Conditions_Met</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Allowed operators in custom logic --></label>
+        <name>spco__Filters_Allowed_Operators</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Only OR operators in SOQL --></label>
+        <name>spco__Filters_Any_Condition_Met</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Condition cannot end with AND or OR --></label>
+        <name>spco__Filters_Cannot_End_With</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error message for syntax-related issues --></label>
+        <name>spco__Filters_Check_Syntax</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Condition list cannot be empty --></label>
+        <name>spco__Filters_Condition_List_Cannot_Be_Empty</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conditions section title --></label>
+        <name>spco__Filters_Conditions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Custom filter logic in SOQL query --></label>
+        <name>spco__Filters_Custom_Condition_Logic_Met</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error message for parentheses-related issues --></label>
+        <name>spco__Filters_Empty_Parentheses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Title of component --></label>
+        <name>spco__Filters_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Condition cannot contains multiple operator between numbers --></label>
+        <name>spco__Filters_Multiple_Operators</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No filters in SOQL query --></label>
+        <name>spco__Filters_No_Conditions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error message for custom conditions-related issues --></label>
+        <name>spco__Filters_Not_All_Conditions_Included</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error message for parentheses-related issues --></label>
+        <name>spco__Filters_Parentheses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error message for parentheses-related issues --></label>
+        <name>spco__Filters_Parentheses_Not_Closed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select Filter Logic --></label>
+        <name>spco__Filters_Select_Logic</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error when too many options are selected in the input --></label>
+        <name>spco__Hierarchical_Dual_List_Box_Error_Selected_Options_Max</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mass Update Modal Available Fields --></label>
+        <name>spco__Mass_Update_Modal_Available_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mass Update Modal Choose Fields Value --></label>
+        <name>spco__Mass_Update_Modal_Choose_Fields_Value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mass Update Modal Choose Picklist Values --></label>
+        <name>spco__Mass_Update_Modal_Choose_Picklist_Values</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mass Update Modal Fields To Be Updated --></label>
+        <name>spco__Mass_Update_Modal_Fields_To_Be_Updated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mass Update Modal Mass Update Records --></label>
+        <name>spco__Mass_Update_Modal_Mass_Update_Records</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mass Update Modal Selected Records --></label>
+        <name>spco__Mass_Update_Modal_Selected_Records</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Modal Sort Select Sorting Order --></label>
+        <name>spco__Modal_Sort_Select_Sorting_Order</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Modal Sort Sort By --></label>
+        <name>spco__Modal_Sort_Sort_By</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Modal Sort Sort Items --></label>
+        <name>spco__Modal_Sort_Sort_Items</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Sorting fields limit warning message --></label>
+        <name>spco__Modal_Sort_Sorting_Fields_Limit_Warning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Modal Sort Toggle Sorting Direction --></label>
+        <name>spco__Modal_Sort_Toggle_Sorting_Direction</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Create Record --></label>
+        <name>spco__Related_List_Create_Record</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Error Friendly Message - Editor --></label>
+        <name>spco__Related_List_Error_Friendly_Message_Editor</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Error Friendly Message - Standard User --></label>
+        <name>spco__Related_List_Error_Friendly_Message_Standard_User</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Get Records error --></label>
+        <name>spco__Related_List_Error_Get_Records</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Displayed when trying to change configuration without RelatedListEditor access. --></label>
+        <name>spco__Related_List_Error_Missing_Access</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Error Open Delete Record --></label>
+        <name>spco__Related_List_Error_Open_Delete_Record</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Error Open Modal Owner --></label>
+        <name>spco__Related_List_Error_Open_Modal_Owner</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Error Predefined Config --></label>
+        <name>spco__Related_List_Error_Predefined_Config</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Header Actions Conditional Formatting --></label>
+        <name>spco__Related_List_Header_Actions_Conditional_Formatting</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Header Actions Configure Component --></label>
+        <name>spco__Related_List_Header_Actions_Configure_Component</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Header Actions Export To Excel --></label>
+        <name>spco__Related_List_Header_Actions_Export_To_Excel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Header Actions Mass Update --></label>
+        <name>spco__Related_List_Header_Actions_Mass_Update</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Header Actions Refresh Component --></label>
+        <name>spco__Related_List_Header_Actions_Refresh_Component</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List No Records To Display --></label>
+        <name>spco__Related_List_No_Records_To_Display</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Success Update --></label>
+        <name>spco__Related_List_Success_Update</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Success Update Fields --></label>
+        <name>spco__Related_List_Success_Update_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related List Unknown Action --></label>
+        <name>spco__Related_List_Unknown_Action</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- url --></label>
+        <name>url</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- Welcome --></label>
+        <name>Welcome</name>
+    </customTabs>
+    <flowDefinitions>
+        <flows/>
+        <fullName>AL_Create_Time_Entry_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Create_Agent_Ralph_Case</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>logEmail</name>
+                        <value/>
+                    </inputParameters>
+                    <name>SendEmail</name>
+                </fields>
+                <name>Screen1</name>
+            </screens>
+            <textTemplates>
+                <name>EmailBody</name>
+            </textTemplates>
+            <textTemplates>
+                <name>EmailSubject</name>
+            </textTemplates>
+        </flows>
+        <fullName>Email_Composer_Test_Screen_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>ResultResponse</name>
+                </fields>
+                <name>ResultScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>ArrayResult</name>
+                </fields>
+                <name>TestResult</name>
+            </screens>
+            <textTemplates>
+                <name>ArrayMapExample</name>
+            </textTemplates>
+            <textTemplates>
+                <name>ResponseExample</name>
+            </textTemplates>
+            <textTemplates>
+                <name>TestExtractKey</name>
+            </textTemplates>
+        </flows>
+        <fullName>Extrct_JSON_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Fake_Loop_on_Opportunity</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>messageToggleActive</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>messageToggleInactive</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Email</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>messageToggleActive</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>messageToggleInactive</name>
+                        <value/>
+                    </inputParameters>
+                    <name>YesorNo</name>
+                </fields>
+                <name>Generate_Quote</name>
+            </screens>
+        </flows>
+        <fullName>Generate_Doc_Button_on_Record</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>messageToggleActive</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>messageToggleInactive</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Doyouwanttogeneraterenewalforms</name>
+                </fields>
+                <name>Screen1</name>
+            </screens>
+        </flows>
+        <fullName>Generate_Docs_Screen_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Generate_PDF_Opportunity</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>ResultResponse</name>
+                </fields>
+                <name>ResultScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>ArrayResult</name>
+                </fields>
+                <name>TestResult</name>
+            </screens>
+            <textTemplates>
+                <name>AttachmentJSONArray</name>
+            </textTemplates>
+            <textTemplates>
+                <name>ResponseExample</name>
+            </textTemplates>
+            <textTemplates>
+                <name>TestExtractKey</name>
+            </textTemplates>
+        </flows>
+        <fullName>Get_Foreign_Exchange_Data</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>ResultResponse</name>
+                </fields>
+                <name>ResultScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>ArrayResult</name>
+                </fields>
+                <name>TestResult</name>
+            </screens>
+            <textTemplates>
+                <name>AttachmentJSONArray</name>
+            </textTemplates>
+            <textTemplates>
+                <name>ResponseExample</name>
+            </textTemplates>
+            <textTemplates>
+                <name>TestExtractKey</name>
+            </textTemplates>
+        </flows>
+        <fullName>Get_Foreign_Exchange_Data_With_Merge_Fields</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>ResultResponse</name>
+                </fields>
+                <name>ResultScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>ArrayResult</name>
+                </fields>
+                <name>TestResult</name>
+            </screens>
+            <textTemplates>
+                <name>AttachmentJSONArray</name>
+            </textTemplates>
+            <textTemplates>
+                <name>ResponseExample</name>
+            </textTemplates>
+            <textTemplates>
+                <name>TestExtractKey</name>
+            </textTemplates>
+        </flows>
+        <fullName>Get_Foreign_Exchange_Data_for_packaging</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Loop_Test</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Result</name>
+                </fields>
+                <name>ResultScreen</name>
+            </screens>
+            <screens>
+                <name>test</name>
+            </screens>
+        </flows>
+        <fullName>Make_Http_Call</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Opportunity_PDF_Generator</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Process_Business_Card_ALF</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Prompt_Template_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Prompt_Template_Triggered_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <textTemplates>
+                <name>NEWLead</name>
+            </textTemplates>
+        </flows>
+        <fullName>Send_Message_to_Slack_on_Lead_Creation</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Company_Name</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Email</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_First_Name</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Last_Name</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Mobile_Phone</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_ScanBusinessCard</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Title</name>
+                </fields>
+                <fields>
+                    <name>Copy_1_of_Website</name>
+                </fields>
+                <fields>
+                    <name>ReturnScreen_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>ReturnScreen_Section1_Column1</name>
+                </fields>
+                <name>ReturnScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>multiple</name>
+                        <value/>
+                    </inputParameters>
+                    <name>BusinessCard</name>
+                </fields>
+                <fields>
+                    <name>ScanBusinessCard</name>
+                </fields>
+                <fields>
+                    <name>UploadScreen_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>UploadScreen_Section1_Column1</name>
+                </fields>
+                <name>UploadScreen</name>
+            </screens>
+        </flows>
+        <fullName>Upload_Business_Card_Screen_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Error_Message_Display</name>
+                </fields>
+                <name>Screen_Generation_Error</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>No_Template_Message</name>
+                </fields>
+                <name>Screen_No_Template</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Success_Message</name>
+                </fields>
+                <name>Screen_Success</name>
+            </screens>
+        </flows>
+        <fullName>portwoodglobal__DocGen_Generate_Account_Summary</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>portwoodglobal__DocGen_Welcome_Pack_New_Contact</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>sfdc_default_ReportExport_Protection_Flow</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Bot Metrics Daily Spring &apos;24 --></description>
+        <label><!-- Bot Metrics Daily Spring &apos;24 --></label>
+        <name>Bot_Metrics_Daily_v6</name>
+        <sections>
+            <label><!-- Conversation Definition Dialog Daily Metrics --></label>
+            <name>Conversation Definition Dialog Daily Metrics</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Bot Metrics Hourly Spring &apos;24 --></description>
+        <label><!-- Bot Metrics Hourly Spring &apos;24 --></label>
+        <name>Bot_Metrics_Hourly_v6</name>
+        <sections>
+            <label><!-- Conversation Definition Dialog Hourly Metrics --></label>
+            <name>Conversation Definition Dialog Hourly Metrics</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Session Metrics Spring &apos;24 --></description>
+        <label><!-- Session Metrics Spring &apos;24 --></label>
+        <name>Bot_Sessions_v6</name>
+        <sections>
+            <label><!-- Conversation Definition Session Metrics --></label>
+            <name>Conversation Definition Session Metrics</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Program Definition Spring &apos;24 --></description>
+        <label><!-- Program Definition Spring &apos;24 --></label>
+        <name>Program_Definition_sfdcSESv60</name>
+        <sections>
+            <columns>
+                <label><!-- Added by --></label>
+                <name>Added by</name>
+            </columns>
+            <columns>
+                <label><!-- Is Outcome --></label>
+                <name>Is Outcome</name>
+            </columns>
+            <columns>
+                <label><!-- Program Name --></label>
+                <name>Program Name</name>
+            </columns>
+            <columns>
+                <label><!-- Program Type --></label>
+                <name>Program Type</name>
+            </columns>
+            <columns>
+                <label><!-- Target Day --></label>
+                <name>Target Day</name>
+            </columns>
+            <columns>
+                <label><!-- Target Result --></label>
+                <name>Target Result</name>
+            </columns>
+            <label><!-- Program Task Definitions --></label>
+            <name>Program Task Definitions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Program Definition Summer &apos;24 --></description>
+        <label><!-- Program Definition Summer &apos;24 --></label>
+        <name>Program_Definition_sfdcSESv61</name>
+        <sections>
+            <columns>
+                <label><!-- Added by --></label>
+                <name>Added by</name>
+            </columns>
+            <columns>
+                <label><!-- Is Outcome --></label>
+                <name>Is Outcome</name>
+            </columns>
+            <columns>
+                <label><!-- Program Name --></label>
+                <name>Program Name</name>
+            </columns>
+            <columns>
+                <label><!-- Program Type --></label>
+                <name>Program Type</name>
+            </columns>
+            <columns>
+                <label><!-- Target Day --></label>
+                <name>Target Day</name>
+            </columns>
+            <columns>
+                <label><!-- Target Result --></label>
+                <name>Target Result</name>
+            </columns>
+            <label><!-- Program Task Definitions --></label>
+            <name>Program Task Definitions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Program Progress Spring &apos;24 --></description>
+        <label><!-- Program Progress Spring &apos;24 --></label>
+        <name>Program_Progress_sfdcSESv60</name>
+        <sections>
+            <columns>
+                <label><!-- Completed On Day --></label>
+                <name>Completed On Day</name>
+            </columns>
+            <columns>
+                <label><!-- Completion Rate --></label>
+                <name>Completion Rate</name>
+            </columns>
+            <columns>
+                <label><!-- Completion Status --></label>
+                <name>Completion Status</name>
+            </columns>
+            <columns>
+                <label><!-- Days in Progress --></label>
+                <name>Days in Progress</name>
+            </columns>
+            <columns>
+                <label><!-- Email --></label>
+                <name>Email</name>
+            </columns>
+            <columns>
+                <label><!-- Manager --></label>
+                <name>Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Outcome Progress --></label>
+                <name>Outcome Progress</name>
+            </columns>
+            <columns>
+                <label><!-- Program Name --></label>
+                <name>Program Name</name>
+            </columns>
+            <columns>
+                <label><!-- Program Type --></label>
+                <name>Program Type</name>
+            </columns>
+            <columns>
+                <label><!-- Total Days --></label>
+                <name>Total Days</name>
+            </columns>
+            <columns>
+                <label><!-- User --></label>
+                <name>User</name>
+            </columns>
+            <label><!-- Program Progress --></label>
+            <name>Program Progress</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Program Progress Summer &apos;24 --></description>
+        <label><!-- Program Progress Summer &apos;24 --></label>
+        <name>Program_Progress_sfdcSESv61</name>
+        <sections>
+            <columns>
+                <label><!-- Completed On Day --></label>
+                <name>Completed On Day</name>
+            </columns>
+            <columns>
+                <label><!-- Completion Rate --></label>
+                <name>Completion Rate</name>
+            </columns>
+            <columns>
+                <label><!-- Completion Status --></label>
+                <name>Completion Status</name>
+            </columns>
+            <columns>
+                <label><!-- Days in Progress --></label>
+                <name>Days in Progress</name>
+            </columns>
+            <columns>
+                <label><!-- Email --></label>
+                <name>Email</name>
+            </columns>
+            <columns>
+                <label><!-- Manager --></label>
+                <name>Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Outcome Progress --></label>
+                <name>Outcome Progress</name>
+            </columns>
+            <columns>
+                <label><!-- Program Name --></label>
+                <name>Program Name</name>
+            </columns>
+            <columns>
+                <label><!-- Program Type --></label>
+                <name>Program Type</name>
+            </columns>
+            <columns>
+                <label><!-- Total Days --></label>
+                <name>Total Days</name>
+            </columns>
+            <columns>
+                <label><!-- User --></label>
+                <name>User</name>
+            </columns>
+            <label><!-- Program Progress --></label>
+            <name>Program Progress</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Program Item Progress Spring &apos;24 --></description>
+        <label><!-- Program Item Progress Spring &apos;24 --></label>
+        <name>Program_Task_Progress_sfdcSESv60</name>
+        <sections>
+            <columns>
+                <label><!-- Completion Rate --></label>
+                <name>Completion Rate</name>
+            </columns>
+            <columns>
+                <label><!-- Created By --></label>
+                <name>Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Days in Progress --></label>
+                <name>Days in Progress</name>
+            </columns>
+            <columns>
+                <label><!-- Days to Complete --></label>
+                <name>Days to Complete</name>
+            </columns>
+            <columns>
+                <label><!-- Email --></label>
+                <name>Email</name>
+            </columns>
+            <columns>
+                <label><!-- Is Outcome --></label>
+                <name>Is Outcome</name>
+            </columns>
+            <columns>
+                <label><!-- Manager --></label>
+                <name>Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Milestone Target --></label>
+                <name>Milestone Target</name>
+            </columns>
+            <columns>
+                <label><!-- Minimum Sample Size --></label>
+                <name>Minimum Sample Size</name>
+            </columns>
+            <columns>
+                <label><!-- Program Name --></label>
+                <name>Program Name</name>
+            </columns>
+            <columns>
+                <label><!-- Program Status --></label>
+                <name>Program Status</name>
+            </columns>
+            <columns>
+                <label><!-- Program Task --></label>
+                <name>Program Task</name>
+            </columns>
+            <columns>
+                <label><!-- Program Task Name --></label>
+                <name>Program Task Name</name>
+            </columns>
+            <columns>
+                <label><!-- Program Task Progress ID --></label>
+                <name>Program Task Progress ID</name>
+            </columns>
+            <columns>
+                <label><!-- Program Type --></label>
+                <name>Program Type</name>
+            </columns>
+            <columns>
+                <label><!-- Section --></label>
+                <name>Section</name>
+            </columns>
+            <columns>
+                <label><!-- Section Name --></label>
+                <name>Section Name</name>
+            </columns>
+            <columns>
+                <label><!-- Target Day --></label>
+                <name>Target Day</name>
+            </columns>
+            <columns>
+                <label><!-- Task Category --></label>
+                <name>Task Category</name>
+            </columns>
+            <columns>
+                <label><!-- User --></label>
+                <name>User</name>
+            </columns>
+            <label><!-- Program Task Progress --></label>
+            <name>Program Task Progress</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Program Item Progress Summer &apos;24 --></description>
+        <label><!-- Program Item Progress Summer &apos;24 --></label>
+        <name>Program_Task_Progress_sfdcSESv61</name>
+        <sections>
+            <columns>
+                <label><!-- Completion Rate --></label>
+                <name>Completion Rate</name>
+            </columns>
+            <columns>
+                <label><!-- Created By --></label>
+                <name>Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Days in Progress --></label>
+                <name>Days in Progress</name>
+            </columns>
+            <columns>
+                <label><!-- Days to Complete --></label>
+                <name>Days to Complete</name>
+            </columns>
+            <columns>
+                <label><!-- Email --></label>
+                <name>Email</name>
+            </columns>
+            <columns>
+                <label><!-- Is Outcome --></label>
+                <name>Is Outcome</name>
+            </columns>
+            <columns>
+                <label><!-- Manager --></label>
+                <name>Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Milestone Target --></label>
+                <name>Milestone Target</name>
+            </columns>
+            <columns>
+                <label><!-- Minimum Sample Size --></label>
+                <name>Minimum Sample Size</name>
+            </columns>
+            <columns>
+                <label><!-- Program Name --></label>
+                <name>Program Name</name>
+            </columns>
+            <columns>
+                <label><!-- Program Status --></label>
+                <name>Program Status</name>
+            </columns>
+            <columns>
+                <label><!-- Program Task --></label>
+                <name>Program Task</name>
+            </columns>
+            <columns>
+                <label><!-- Program Task Name --></label>
+                <name>Program Task Name</name>
+            </columns>
+            <columns>
+                <label><!-- Program Task Progress ID --></label>
+                <name>Program Task Progress ID</name>
+            </columns>
+            <columns>
+                <label><!-- Program Type --></label>
+                <name>Program Type</name>
+            </columns>
+            <columns>
+                <label><!-- Section --></label>
+                <name>Section</name>
+            </columns>
+            <columns>
+                <label><!-- Section Name --></label>
+                <name>Section Name</name>
+            </columns>
+            <columns>
+                <label><!-- Target Day --></label>
+                <name>Target Day</name>
+            </columns>
+            <columns>
+                <label><!-- Task Category --></label>
+                <name>Task Category</name>
+            </columns>
+            <columns>
+                <label><!-- User --></label>
+                <name>User</name>
+            </columns>
+            <label><!-- Program Task Progress --></label>
+            <name>Program Task Progress</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Verification History --></description>
+        <label><!-- Verification History --></label>
+        <name>Verification</name>
+        <sections>
+            <label><!-- Identity Verification History --></label>
+            <name>Identity Verification History</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Run Logs Spring &apos;24 --></description>
+        <label><!-- Orchestration Run Logs Spring &apos;24 --></label>
+        <name>flow_orchestration_log_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Run Log --></label>
+            <name>Orchestration Run Log</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Runs --></label>
+            <name>Orchestration Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Stage Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Stage Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_stage_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Stage Runs --></label>
+            <name>Orchestration Stage Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Step Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Step Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_step_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Step Runs --></label>
+            <name>Orchestration Step Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Work Items Spring &apos;24 --></description>
+        <label><!-- Orchestration Work Items Spring &apos;24 --></label>
+        <name>flow_orchestration_work_item_ootb_crt_two_four_eight</name>
+        <sections>
+            <columns>
+                <label><!-- Orchestration Step Run: Label --></label>
+                <name>Orchestration Step Run: Label</name>
+            </columns>
+            <columns>
+                <label><!-- Orchestration Step Run: Name --></label>
+                <name>Orchestration Step Run: Name</name>
+            </columns>
+            <columns>
+                <label><!-- Orchestration Step Run: Status --></label>
+                <name>Orchestration Step Run: Status</name>
+            </columns>
+            <label><!-- Orchestration Step Runs --></label>
+            <name>Orchestration Step Runs</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Assigned Group or Queue --></label>
+                <name>Assigned Group or Queue</name>
+            </columns>
+            <columns>
+                <label><!-- Assigned User --></label>
+                <name>Assigned User</name>
+            </columns>
+            <label><!-- Orchestration Work Items --></label>
+            <name>Orchestration Work Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Screen Flows --></description>
+        <label><!-- Screen Flows --></label>
+        <name>screen_flows_prebuilt_crt</name>
+        <sections>
+            <label><!-- Flow Interview Log Entries --></label>
+            <name>Flow Interview Log Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Flow Interview Logs --></label>
+            <name>Flow Interview Logs</name>
+        </sections>
+    </reportTypes>
+</Translations>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>List_Price_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+   ListPrice &gt;= 1000,
+  &quot;$&quot; &amp; TEXT(FLOOR(ListPrice / 1000)) &amp; &quot;,&quot; &amp; 
+  LPAD(TEXT(FLOOR(MOD(ListPrice , 1000))), 3, &quot;0&quot;),
+  &quot;$&quot; &amp; TEXT(FLOOR(ListPrice ))
+) &amp; 
+&quot;.&quot; &amp; 
+IF(
+  MOD(ListPrice  * 100, 100) &lt; 10,
+  &quot;0&quot; &amp; TEXT(MOD(ListPrice * 100, 100)),
+  TEXT(MOD(ListPrice * 100, 100))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>List Price Formula</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

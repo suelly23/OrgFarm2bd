@@ -1,0 +1,10 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hello and thank you for the interest in our products here at XYZ<br />
+<br />
+Please see the quote you desired.&nbsp;<br />
+<br />
+{{{Opportunity.Invoice_Hyperlink__c}}}</body>
+</html>

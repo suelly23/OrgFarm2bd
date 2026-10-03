@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_6</activeVersionIdentifier>
+    <developerName>File_Template</developerName>
+    <masterLabel>File Template</masterLabel>
+    <overridable>false</overridable>
+    <templateVersions>
+        <content>You are an AI agent that extracts contact details from a business card photo.
+Extract the following fields: First Name, Last Name, Title, Company Name, Email, and Mobile Phone.
+Return the response in JSON format.
+
+Here is an example output:
+
+{
+  &quot;FirstName&quot;: &quot;Yumi&quot;,
+  &quot;LastName&quot;: &quot;Ibrahimzade&quot;,
+  &quot;Title&quot;: &quot;Salesforce Solution Architect&quot;,
+  &quot;CompanyName&quot;: &quot;Salesforce Time&quot;,
+  &quot;Email&quot;: &quot;info@salesforcetime.com&quot;,
+  &quot;MobilePhone&quot;: &quot;0549000000&quot;
+}
+Business Card Image:
+{!$RecordSnapshot:File.snapshot}
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>File</apiName>
+            <definition>SOBJECT://ContentDocument</definition>
+            <masterLabel>File</masterLabel>
+            <referenceName>Input:File</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultVertexAIGeminiPro25</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>invocable://getDataForGrounding</definition>
+            <description>Retrieves record data for grounding a prompt template.</description>
+            <label>Record Snapshot</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>recordId</parameterName>
+                <valueExpression>{!$Input:File.Id}</valueExpression>
+            </parameters>
+            <referenceName>RecordSnapshot:File</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You are an AI agent that extracts contact details from a business card photo.
+Extract the following fields: First Name, Last Name, Title, Company Name, Email, and Mobile Phone.
+Return the response in JSON format.
+
+Here is an example output:
+
+{
+  &quot;FirstName&quot;: &quot;Yumi&quot;,
+  &quot;LastName&quot;: &quot;Ibrahimzade&quot;,
+  &quot;Title&quot;: &quot;Salesforce Solution Architect&quot;,
+  &quot;CompanyName&quot;: &quot;Salesforce Time&quot;,
+  &quot;Email&quot;: &quot;info@salesforcetime.com&quot;,
+  &quot;MobilePhone&quot;: &quot;0549000000&quot;
+}
+Business Card Image:
+{!$RecordSnapshot:File.snapshot}
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>File</apiName>
+            <definition>SOBJECT://ContentDocument</definition>
+            <masterLabel>File</masterLabel>
+            <referenceName>Input:File</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultVertexAIGeminiPro25</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getDataForGrounding</definition>
+            <description>Retrieves record data for grounding a prompt template.</description>
+            <label>Record Snapshot</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>recordId</parameterName>
+                <valueExpression>{!$Input:File.Id}</valueExpression>
+            </parameters>
+            <referenceName>RecordSnapshot:File</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You are an AI agent that extracts contact details from a business card photo.
+Extract the following fields: First Name, Last Name, Title, Company Name, Email, and Mobile Phone.
+Return the response in JSON format.
+
+Here is an example output:
+
+{
+  &quot;FirstName&quot;: &quot;Yumi&quot;,
+  &quot;LastName&quot;: &quot;Ibrahimzade&quot;,
+  &quot;Profession / Title&quot;: &quot;Salesforce Solution Architect&quot;,
+  &quot;CompanyName&quot;: &quot;Salesforce Time&quot;,
+  &quot;Email&quot;: &quot;info@salesforcetime.com&quot;,
+  &quot;MobilePhone&quot;: &quot;0549000000&quot;
+}
+Business Card Image:
+{!$RecordSnapshot:File.snapshot}
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>File</apiName>
+            <definition>SOBJECT://ContentDocument</definition>
+            <masterLabel>File</masterLabel>
+            <referenceName>Input:File</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultVertexAIGeminiPro25</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getDataForGrounding</definition>
+            <description>Retrieves record data for grounding a prompt template.</description>
+            <label>Record Snapshot</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>recordId</parameterName>
+                <valueExpression>{!$Input:File.Id}</valueExpression>
+            </parameters>
+            <referenceName>RecordSnapshot:File</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You are an AI agent that extracts contact details from a business card photo.
+Extract the following fields: First Name, Last Name, Title, Company Name, Website, Email, and Mobile Phone.
+Return the response in JSON format.
+Website will contain a &quot;www.&quot; and end in a &quot;.&quot; something
+
+Here is an example output:
+
+{
+  &quot;FirstName&quot;: &quot;Yumi&quot;,
+  &quot;LastName&quot;: &quot;Ibrahimzade&quot;,
+  &quot;Profession / Title&quot;: &quot;Salesforce Solution Architect&quot;,
+  &quot;CompanyName&quot;: &quot;Salesforce Time&quot;,
+  &quot;CompanyWebsite&quot;: &quot;www.google.com&quot;
+  &quot;Email&quot;: &quot;info@salesforcetime.com&quot;,
+  &quot;MobilePhone&quot;: &quot;0549000000&quot;
+}
+Business Card Image:
+{!$RecordSnapshot:File.snapshot}
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>File</apiName>
+            <definition>SOBJECT://ContentDocument</definition>
+            <masterLabel>File</masterLabel>
+            <referenceName>Input:File</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultVertexAIGeminiPro25</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getDataForGrounding</definition>
+            <description>Retrieves record data for grounding a prompt template.</description>
+            <label>Record Snapshot</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>recordId</parameterName>
+                <valueExpression>{!$Input:File.Id}</valueExpression>
+            </parameters>
+            <referenceName>RecordSnapshot:File</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_4</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You are an AI agent that extracts contact details from a business card photo.
+Extract the following fields: First Name, Last Name, Title, Company Name, Website, Email, and Mobile Phone.
+Return the response in JSON format.
+Website will contain a &quot;www.&quot; and end in a &quot;.&quot; something
+
+Here is an example output:
+
+{
+  &quot;FirstName&quot;: Yumi,
+  &quot;LastName&quot;: Ibrahimzade,
+  &quot;Profession / Title&quot;: Salesforce Solution Architect,
+  &quot;CompanyName&quot;: Salesforce Time,
+  &quot;CompanyWebsite&quot;: www.google.com,
+  &quot;Email&quot;: info@salesforcetime.com,
+  &quot;MobilePhone&quot;: 0549000000&quot;
+}
+Business Card Image:
+{!$RecordSnapshot:File.snapshot}
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>File</apiName>
+            <definition>SOBJECT://ContentDocument</definition>
+            <masterLabel>File</masterLabel>
+            <referenceName>Input:File</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultVertexAIGeminiPro25</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getDataForGrounding</definition>
+            <description>Retrieves record data for grounding a prompt template.</description>
+            <label>Record Snapshot</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>recordId</parameterName>
+                <valueExpression>{!$Input:File.Id}</valueExpression>
+            </parameters>
+            <referenceName>RecordSnapshot:File</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_5</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You are an AI agent that extracts contact details from a business card photo.
+Extract the following fields: First Name, Last Name, Title, Company Name, Website, Email, and Mobile Phone.
+Return the response in JSON format.
+Website will contain a &quot;www.&quot; and end in a &quot;.com, .edu., .usa, .gov, or .io&quot;
+Here is an example output:
+
+{
+  &quot;FirstName&quot;: Yumi,
+  &quot;LastName&quot;: Ibrahimzade,
+  &quot;Profession / Title&quot;: Salesforce Solution Architect,
+  &quot;CompanyName&quot;: Salesforce Time,
+  &quot;CompanyWebsite&quot;: www.google.com,
+  &quot;Email&quot;: info@salesforcetime.com,
+  &quot;MobilePhone&quot;: 0549000000&quot;
+}
+Business Card Image:
+{!$RecordSnapshot:File.snapshot}
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>File</apiName>
+            <definition>SOBJECT://ContentDocument</definition>
+            <masterLabel>File</masterLabel>
+            <referenceName>Input:File</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultVertexAIGeminiPro25</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getDataForGrounding</definition>
+            <description>Retrieves record data for grounding a prompt template.</description>
+            <label>Record Snapshot</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>recordId</parameterName>
+                <valueExpression>{!$Input:File.Id}</valueExpression>
+            </parameters>
+            <referenceName>RecordSnapshot:File</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JMZELNWAhSQUxl4BxUWAkNIJHcL9/tIeoUeNbjLeK3M=_6</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
