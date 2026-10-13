@@ -97,7 +97,7 @@
         <locationY>0</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>YES_Website_is_populated</name>
+            <name>YES_WEBSITE_IS_POPULATED</name>
             <conditionLogic>or</conditionLogic>
             <conditions>
                 <leftValueReference>Copy_1_of_Website</leftValueReference>
